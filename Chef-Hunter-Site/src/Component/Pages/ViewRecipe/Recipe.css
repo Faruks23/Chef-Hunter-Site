@@ -1,0 +1,92 @@
+/* Style for table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-family:sans-serif;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+.chef-info{
+  background-color: orange;
+  width: 50%;
+  overflow: hidden;
+  padding: 20px;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+th {
+  background-color: #f6a612ee;
+}
+
+tr:nth-child(even) {
+  background-color: #e3dddd;
+}
+
+/* Style for table on mobile devices */
+@media only screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  .chef-info{
+   width: 95%;
+  
+  }
+  /* Hide table headers */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  td {
+    /* Remove border for first column */
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  /* Add borders to other columns */
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  
+  /* Recipe name column */
+  td:nth-of-type(1):before {
+    content: "Recipe Name";
+    font-weight: bold;
+  }
+  
+  /* Ingredients column */
+  td:nth-of-type(2):before {
+    content: "Ingredients";
+    font-weight: bold;
+  }
+  
+  /* Cooking method column */
+  td:nth-of-type(3):before {
+    content: "Cooking Method";
+    font-weight: bold;
+  }
+  
+  /* Rating column */
+  td:nth-of-type(4):before {
+    content: "Rating";
+    font-weight: bold;
+  }
+  
+  /* Favorite button column */
+  td:nth-of-type(5):before {
+    content: "Favorite";
+    font-weight: bold;
+  }
+}

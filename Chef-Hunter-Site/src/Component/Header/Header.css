@@ -1,0 +1,158 @@
+.bg {
+  background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+  color: rgb(19, 18, 18);
+  box-shadow: 2px 2px 2px rgba(14, 3, 3, 0.246);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+}
+.user-img{
+  position: absolute;
+  margin-top: 5px;
+ 
+  transition: 0.5s ease-in-out;
+ 
+}
+.active{
+ color: rgb(92, 6, 6);
+ 
+}
+.user-profile img{
+  position: relative;
+}
+
+.title {
+  font-size: 220%;
+  font-family: cursive;
+  font-style: oblique;
+ 
+}
+.btn-logout{
+  padding: 5px;
+  border-radius: 5px;
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-duration: tracking-in-expand 0.3s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.shake-vertical {
+  animation: shake-vertical 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both
+    infinite;
+}
+
+
+@-webkit-keyframes shake-vertical {
+  0%,
+  100% {
+    
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+  
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+   
+    transform: translateY(8px);
+  }
+  80% {
+ 
+    transform: translateY(6.4px);
+  }
+  90% {
+    
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    
+    transform: translateY(8px);
+  }
+  80% {
+    
+    transform: translateY(6.4px);
+  }
+  90% {
+    
+    transform: translateY(-6.4px);
+  }
+}
+.manubar{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .manubar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-link{
+    display: block !important;
+     position: absolute;
+     top: 60px;
+     right: 0;
+     background-color: bisque;
+     height: 50vh;
+     width: 40%;
+     z-index: 1;
+     transition: 0.5s ease-in-out;
+     padding: 20px;
+     margin: 0 auto;
+
+  }
+  .nav-link li{
+    margin-bottom: 15px;
+    
+  }
+}

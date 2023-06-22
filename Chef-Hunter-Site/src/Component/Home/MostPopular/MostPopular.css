@@ -1,0 +1,37 @@
+.most-container{
+  /* display: grid; */
+  width: 95%;
+  
+}
+.item{
+  transform: scale(0.9);
+  transition: 0.4s ease-in-out;
+  border: 1px solid rgba(255, 115, 0, 0.845);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.item img{
+  margin: 0 auto;
+}
+.item:hover{
+  transform: scale(1);
+}
+.item p{
+  font-size: 30px;
+  font-family: cursive;
+}
+.most-f-d h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 3px solid  rgb(255, 153, 0);
+}
+.most-f-d h1:hover{
+  color: rgb(212, 100, 8);
+}
+.most-f-d h3{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}

@@ -1,0 +1,36 @@
+.or{
+ font-size: 17px;
+ font-family: cursive;
+ color: rgb(10, 111, 227);
+ position: relative;
+}
+.or::after{
+  content: "";
+  width: 57px;
+  background-color: rgb(176, 10, 184);
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+}
+.or::before{
+  content: "";
+  width: 57px;
+  background-color: rgb(105, 11, 163);
+  height: 3px;
+  position: absolute;
+  right: 120px;
+  top: 10px;
+}
+.icon{
+  width: 40px;
+  height: 40Px;
+  border-radius: 50%;
+  transition: 0.4 ease-in-out;
+  color: rgb(9, 124, 240);
+
+}
+.icon:hover{
+  background-color: rgb(48, 122, 241);
+  color: white;
+}

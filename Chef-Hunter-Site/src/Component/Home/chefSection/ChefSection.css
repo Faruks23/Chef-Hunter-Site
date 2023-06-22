@@ -1,0 +1,94 @@
+ .card{
+    
+   position: relative;
+  
+   cursor: pointer;
+   transition: all .5s ease-in;
+  
+  
+   
+  }
+  button{
+    background-color: #f85a04 !important;
+    color: white !important;
+  }
+  .card:hover{
+    color:rgb(231, 81, 6);
+    transition: color 1s;
+ 
+
+  }
+  .card:before{
+    content: "";
+    width: 102%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      132deg,#f5750c40, #e67f1174 43%, #9805ed77
+    );
+    position: absolute;
+    z-index: -1;
+    top: -0.5%;
+    left: -1.4%;
+    
+    filter: drop-shadow(3px 2px 2px);
+  
+  }
+ 
+  .card::after{
+    position: absolute;
+    content: "";
+    top:12vh;
+     background-image: linear-gradient(
+    132deg
+    , #eb7f45, #f7896d 43%, #f9b99496);
+      left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     transform: scale(1);
+     opacity: 1;
+     transition: opacity .5s;
+      animation: spin 4.5s linear infinite;
+      z-index: -1;
+      filter: blur(12vh);
+    
+  }
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+ 
+}
+.card:hover .card-hover{
+  display: inline-block;
+  width: 100%;
+  
+}
+  
+  @keyframes spin {
+  0% {
+    transform:rotate(0deg) ;
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.card-hover{
+  position: absolute;
+  background-color: #434d6a0d;
+  z-index: 1;
+  display: none;
+  width:0%;
+  transition:all 0.5s ease-in-out;
+
+  bottom: 0;
+
+}
+.card-hover button{
+  position: absolute;
+  bottom: 10px;
+}
+.chef-section{
+  background: #a59f9f1d;
+}
